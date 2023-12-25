@@ -8,6 +8,7 @@ About the Dataset:
 - Total 16000 images(after augmentation)
 
 Methodology:
+## Using generators to classify
 1. Used split_folder to get train, test and validation split of 80%, 10% and 10% accordingly.
 2. Used ImageDataGenerator to augment images.
 3. Used tensorflow to build the sequential model.
@@ -17,3 +18,6 @@ Methodology:
 7. A flatten layer to prepare it for the dense layer.
 8. There were 10 classes including the Healthy leaves.
 9. Optimizer is used "adam".
+
+## Using pre-trained model(ImageNet)
+1. Achieve a much higher 94% accuracy
